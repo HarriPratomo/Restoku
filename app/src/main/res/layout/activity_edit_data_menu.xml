@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_product_admin"
+    tools:context=".activity.Admin.AddProductAdminActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_detail_btn_1"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Update Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/h"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:c_shadow_radius="10"
+                app:c_border_color="#fff"
+                app:c_shadow="true"
+                app:c_shadow_color="@color/grey"
+                android:layout_marginTop="14dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_camera_alt_24"/>
+            <TextView
+                android:id="@+id/text1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageMenu"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Click di tengah foto untuk mengganti gambar"
+                android:fontFamily="@font/work_sans"
+                android:textSize="10sp"/>
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext"
+                android:layout_below="@+id/text1">
+
+                <EditText
+                    android:id="@+id/edtNamaMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:background="@null"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Nama Menu"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext"
+                android:layout_below="@+id/r1">
+
+                <EditText
+                    android:id="@+id/edtDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:background="@null"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Deskripsi Menu"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext"
+                android:layout_below="@+id/r2">
+
+                <TextView
+                    android:id="@+id/txtSatuanProduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Satuan Menu"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext"
+                android:layout_below="@+id/r3">
+
+                <TextView
+                    android:id="@+id/txtKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Kategori Menu"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext"
+                android:layout_below="@+id/r4">
+
+                <EditText
+                    android:id="@+id/edtHargaMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Harga Menu"
+                    android:inputType="numberDecimal"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Update Menu"
+                android:textAllCaps="false"
+                android:fontFamily="@font/work_sans_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r5"
+                android:background="@drawable/shape_button"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/yellow"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

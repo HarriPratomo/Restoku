@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "644252160525",
+    "firebase_url": "https://bakso-lapangan-tembak-senayan.firebaseio.com",
+    "project_id": "bakso-lapangan-tembak-senayan",
+    "storage_bucket": "bakso-lapangan-tembak-senayan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644252160525:android:7248835d1e7928dbb4fb44",
+        "android_client_info": {
+          "package_name": "com.example.baksolapangantembaksenayan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644252160525-s8e455ggelm9shgfq7rdprm17pqt1asj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1jz4Q_yjxX9BT1WAJqeGWX_NTqZoXt2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644252160525-s8e455ggelm9shgfq7rdprm17pqt1asj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
